@@ -130,8 +130,8 @@ async function autoTransaction() {
             console.log(chalk.red(`❌ Transaction failed: ${error.message}`));
         }
 
-        console.log(chalk.gray("⌛ Waiting 5 seconds before next transaction...\n"));
-        await new Promise(res => setTimeout(res, 5000));
+        console.log(chalk.gray("⌛ Waiting 35 seconds before next transaction...\n"));
+        await new Promise(res => setTimeout(res, 35000));
     }
 
     console.log(chalk.greenBright("\n🎉 All transactions completed! Next run in 24 hours.\n"));
